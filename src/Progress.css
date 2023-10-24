@@ -1,0 +1,18 @@
+@import "./App.css";
+
+.progress-page {
+    padding: 20px;
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.progress-page h1, .progress-page h2 {
+    color: #01579b;
+}
+
+.progress-page ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}

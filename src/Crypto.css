@@ -1,0 +1,11 @@
+@import "./App.css";
+
+.crypto-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.crypto-page h1 {
+    color: #333;
+}

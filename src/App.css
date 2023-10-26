@@ -1,19 +1,22 @@
 :root {
-  --main-color:#001f3f;
+  --main-color:#003809;
   --light-color:#777;
   --light-bg:#eee;
   --black:#000000;
   --white:#fff;
   --dark-gray: #353535;
+  --darker-gray: #1b1b1b;
   --light-gray: #a09d9d;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-  --border:.1rem solid rgba(0,0,0,.2);
+  --border:.5rem solid rgba(0,0,0,.2);
   --light-blue: #a3eaf7;
   --blue: #2149ff;
 }
 
 .app-container {
   font-family: Arial, sans-serif;
+  min-height: 100vh;  /* make sure it covers the full viewport height */
+  background-color: var(--dark-gray);
 }
 
 .header{
@@ -28,76 +31,46 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header .flex .logo{
-  max-width: 8%;
-  margin-left: 10px;
+  max-width: 3.5%;
+  margin: 10px;
 }
 
 .header .flex .navbar a{
-  display: inline-block;
   padding: 1rem 1.5rem;
-  font-size: 1.8rem;
+  font-size: 15px;
   color: var(--white);
-  border-radius: .5rem;
-
+  text-decoration: none;
 }
 
 .header .flex .navbar a:hover{
-  background-color: var(--dark-gray);
-  color: var(--white);
+  color: var(--light-blue);
 }
 
-.welcome-message {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.app-footer {
-  background-color: var(--dark-gray);
+.footer {
+  width: 100%;
+  background-color: var(--darker-gray);
   color: var(--white);
   padding: 10px;
   text-align: center;
 }
 
-.footer {
-  display: flex;
-  align-items: center; /* This will vertically center both divs in the footer */
-  background-color: var(--dark-gray);
-}
-
-.footer .visits {
-  text-align: center;
-  flex: 1; /* This will allow .visits to take up available space */
-  padding: 1.5rem 0; 
-  font-size: 16px;
-  margin-left: 150px;
-}
-
-.footer .version {
-  text-align: right; /* Align the text to the right */
-  padding: 1.5rem 0;
-  margin-right: 50px; /* Keeps the version to the right with a margin */
-}
-
-.page-layout {
-  text-align: center; /* Center align all the text inside the .home-page */
-  padding: 20px; /* Adds some padding for better spacing */
-}
-
 .heading {
-  font-size: 35px;
-  color: var(--main-color); /* Using the --main-color variable */
+  font-size: 90px;
+  color: var(--white); 
+  margin-left: 50px;
+  font-weight: bold;
 }
 
 .subhead {
-  font-size: 20px;
-  color: var(--light-color); /* Using the --light-color variable */
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--white); 
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
+  padding-bottom: 200px;
 }
 
 .page-layout ul {
@@ -106,6 +79,7 @@
   flex-direction: column; /* stack list items vertically */
   align-items: center; /* center-align each list item */
   padding: 0; /* remove default padding */
+  background-color: var(--dark-gray);
 }
 
 .page-layout li {

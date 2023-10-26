@@ -9,6 +9,7 @@ import logo from './imgs/logo.jpg';
 
 function App() {
   return (
+    <div className='app-container'>
     <Router>
       <header className="header">
         <section className="flex">
@@ -38,6 +39,7 @@ function App() {
         <p>Contact Information: [contact@decentrazoo.com]</p>
       </footer>
     </Router>
+    </div>
   );
 }
 

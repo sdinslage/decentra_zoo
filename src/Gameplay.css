@@ -16,3 +16,8 @@
     list-style-type: square;
     padding-left: 20px;
 }
+
+.gameplay-images{
+    display: flex;
+    justify-content: space-between;
+}

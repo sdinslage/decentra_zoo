@@ -9,3 +9,13 @@
 .crypto-page h1 {
     color: #333;
 }
+
+.Coingraph{
+    display: flex;
+    
+}
+
+.Coinstats{
+    margin-left: 100px;
+    margin-top: 125px;
+}

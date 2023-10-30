@@ -21,3 +21,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.gameplay-mechanics h3,img{
+    margin-left: 50px;
+}
+
+.gameplay-mechanics p{
+    margin-left: 50px;
+    width: 600px;
+}

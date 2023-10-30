@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import temp from './imgs/temp.webp';
+import building_screenshot from './imgs/Building_in_decentrazoo_2.jpg';
+import decentrazoo_marketplace from './imgs/Decentra_zoo_marketplace.jpg';
+import decentrazoo_map from './imgs/Decentra_zoo_map.jpg';
 
 function Home() {
     return (
@@ -22,17 +25,37 @@ function Home() {
 
             {/*Tag Line Section*/}
             <section className="tag-section">
-                <h2 className='tag-head'>Build</h2>
-                <p className='tag-details'>DecentraZoo offers a in depth creation kit that allows you to create your Zoo with no limitations. Decorate your Zoo with a wide variety of items from the shop to create your very own
-                virtual decentrasized Zoo.</p>
+                <div className="tag-section-content">
+                    <div>
+                        <h2 className='tag-head'>Build</h2>
+                        <p className='tag-details'>DecentraZoo offers a in-depth creation kit that allows you to create your Zoo with no limitations. Decorate your Zoo with a wide variety of items from the shop to create your very own
+                        virtual decentralized Zoo.</p>
+                    </div>
+                    <div>
+                        <img src ={building_screenshot} width={800} height={400}/>
+                    </div>
+                </div>
 
-                <h3 className='tag-head'>Trade</h3>
-                <p className='tag-details'>Trade, Sell, or Buy items and animals on the DecentraZoo Marketplace. The Marketplace offers hundreds of unique items that you can use to decorate and expand upon your Zoo.
-                The Marketplace utilizes Ethereum smart contracts to ensure a safe and secure transaction process.</p>
+                <div className="tag-section-content">
+                    <div>
+                        <h3 className='tag-head'>Trade</h3>
+                        <p className='tag-details'>Trade, Sell, or Buy items and animals on the DecentraZoo Marketplace. The Marketplace offers hundreds of unique items that you can use to decorate and expand upon your Zoo.
+                        The Marketplace utilizes Ethereum smart contracts to ensure a safe and secure transaction process.</p>
+                    </div>
+                    <div>
+                        <img src ={decentrazoo_marketplace} width={800} height={500}/>
+                    </div>
+                </div>
 
-                <h4 className='tag-head'>Explore</h4>
-                <p className='tag-details'>What fun is a Zoo if no one can see it? DecentraZoo is a fully decentralized metaverse where land and items are owned by its users. Visit other players Zoo's and explore everything DecentraZoo has to offer!</p>
-                
+                <div className="tag-section-content">
+                    <div>
+                        <h4 className='tag-head'>Explore</h4>
+                        <p className='tag-details'>What fun is a Zoo if no one can see it? DecentraZoo is a fully decentralized metaverse where land and items are owned by its users. Visit other players Zoo's and explore everything DecentraZoo has to offer!</p>
+                    </div>
+                    <div>
+                        <img src ={decentrazoo_map} width={800} height={500}/>
+                    </div>
+                </div>
             </section>
 
             {/* Meet the Team Section */}

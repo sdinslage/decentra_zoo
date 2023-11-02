@@ -5,7 +5,7 @@ import Gameplay from './Gameplay';
 import Progress from './Progress';
 import Home from './Home';
 import './App.css';
-import logo from './imgs/logo.jpg';
+import logo from './imgs/DecentraZoo_logo_Transparent.png';
 
 function App() {
   return (

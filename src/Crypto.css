@@ -102,3 +102,22 @@
     text-align: left; /* to keep the text left-aligned to the bullet points */
     width: fit-content; /* fit the width of the list item to its content */
 }
+
+.Coingraph{
+    display: flex;
+    
+}
+
+.Coinstats{
+    margin-left: 100px;
+    margin-top: 125px;
+}
+
+.page-title-and-logo{
+    display: flex;
+}
+
+.page-title-and-logo img{
+    margin-top: 10px;
+    margin-left: 50px;
+}

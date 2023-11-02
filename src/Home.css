@@ -75,6 +75,15 @@
     margin-top: 140px;
 }
 
+.tag-section-content{
+    display: flex;
+}
+
+.tag-section-content img{
+    margin-top: 75px;
+    margin-right: 150px;
+}
+
 /* Meet the Team Styles */
 .team-section {
     text-align: center;

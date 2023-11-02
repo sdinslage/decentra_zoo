@@ -1,1 +1,101 @@
 @import "./App.css";
+
+.about-start{
+    border-bottom: 2px solid var(--light-gray);
+    background: url('./imgs/dc_zoo_background.jpg')  rgba(0,0,0,.7) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    padding-top: 5px;
+}
+
+.about-subhead-layout{
+    margin-left: 150px;
+    color: var(--white);
+    max-width: 50%;
+    margin-bottom: 200px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game-link {
+    color: var(--white); 
+    text-decoration: none;    
+}
+
+.game-link:hover {
+    color: var(--light-blue);  
+}
+
+/* Inspiration Section */
+.inspir-section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.inspir-section .inspir-head{
+    margin-left: 150px;
+    color: var(--white);
+    font-size: 90px;
+}
+
+/*Crypto Zoo Section */
+.crypto-zoo{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.crypto-zoo .cz-head{
+    margin-left: 150px;
+    color: var(--white);
+    font-size: 90px;
+}
+
+/* The Basics Section */
+.basics{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.basics .basics-head{
+    margin-left: 150px;
+    color: var(--white);
+    font-size: 90px;
+}
+
+.basics .basics-details{
+    margin-left: 200px;
+    color: var(--white);
+    max-width: 55%;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.basics .basics-details-2{
+    margin-left: 200px;
+    color: var(--white);
+    max-width: 55%;
+    margin-bottom: 200px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* End */
+.about-end{
+    text-align: center;
+    color: var(--white);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}

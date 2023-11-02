@@ -6,7 +6,7 @@
   --white:#fff;
   --dark-gray: #353535;
   --darker-gray: #1b1b1b;
-  --light-gray: #a09d9d;
+  --light-gray: #5c5c5c;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
   --border:.5rem solid rgba(0,0,0,.2);
   --light-blue: #a3eaf7;
@@ -50,7 +50,6 @@
 }
 
 .footer {
-  width: 100%;
   background-color: var(--darker-gray);
   color: var(--white);
   padding: 10px;
@@ -69,7 +68,7 @@
   font-size: 25px;
   color: var(--white); 
   max-width: 800px;
-  margin-left: 50px;
+  margin-left: 150px;
   padding-bottom: 200px;
 }
 

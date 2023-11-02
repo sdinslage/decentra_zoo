@@ -2,6 +2,11 @@
 
 .title{
     border-bottom: 2px solid var(--light-gray);
+    background: url('./imgs/dc_zoo_background.jpg')  rgba(0,0,0,.7) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    padding-top: 5px;
 }
 
 /* About Section Styles */
@@ -38,26 +43,36 @@
 
 /*Tag Line Section*/
 .tag-section{
-    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-bottom: 2px solid var(--light-gray);
 }
 
-.tag-section .tag-head{
-    margin-left: 150px;
+.tag-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; 
+    padding: 20px 150px;
+}
+
+.tag-section .tag-text .tag-head{
     color: var(--white);
     font-size: 90px;
 }
 
-.tag-section .tag-details{
-    margin-left: 150px;
+.tag-section .tag-text .tag-details{
     color: var(--white);
-    max-width: 35%;
-    margin-bottom: 300px;
+    max-width: 55%;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 300px; /* Adjust as per your design needs */
+}
+
+.tag-section .tag-img{
+    width: 580px;
+    height: 450px;
+    margin-top: 140px;
 }
 
 /* Meet the Team Styles */

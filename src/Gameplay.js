@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import './Gameplay.css';
 import Decentra_zoo_Screenshot_1 from './imgs/Decentra_zoo_Screenshot_1.jpg';
 import Decentra_zoo_Screenshot_2 from './imgs/Decentra_zoo_Screenshot_2.jpg';
@@ -6,6 +7,11 @@ import Decentra_zoo_Screenshot_3 from './imgs/Decentra_zoo_Screenshot_3.jpg';
 import Building_screenshot from './imgs/Building_in_decentrazoo.jpg';
 import explore_screenshot from './imgs/Decentra_zoo_oregon_zoo.jpg';
 import publishing_screenshot from './imgs/Publishing_on_decentra_zoo.jpg';
+import capybaras from './imgs/Decentra_zoo_capybaras.png';
+import ostriches from './imgs/ostriches.png';
+import panda_elephant_exhibit from './imgs/panda_elephant_exhibit.jpg';
+import dancing_minigame from './imgs/Decentra_zoo_dancing_minigame.jpg';
+import marketplace from './imgs/Decentra_zoo_marketplace.jpg';
 
 function Gameplay() {
     return (
@@ -17,14 +23,17 @@ function Gameplay() {
             </section>
 
             {/* Images Section */}
-            <div className="gameplay-images">
-                <img src={Decentra_zoo_Screenshot_1} width={500} height={300} alt='Screenshot-1'/>
-                <img src={Decentra_zoo_Screenshot_2} width={600} height={300} alt='Screenshot-2'/>
-                <img src={Decentra_zoo_Screenshot_3} width={600} height={300} alt='Screenshot-3'/>
+            <div id="gameplay-images">
+                
+                <div className = "slide-image" id="image1"><img src={Decentra_zoo_Screenshot_1} width={500} height={250} alt='Screenshot-1'/></div>
+                <div className = "slide-image" id="image3"><img src={panda_elephant_exhibit} width={500} height={250} alt='Screenshot-3'/></div>
+                <div className = "slide-image" id="image2"><img src={Decentra_zoo_Screenshot_2} width={500} height={250} alt='Screenshot-2'/></div>
+                <div className = "slide-image" id="image3"><img src={Decentra_zoo_Screenshot_3} width={500} height={250} alt='Screenshot-3'/></div>
+                <div className = "slide-image" id="image4"><img src={capybaras} width ={500} height={250} alt='Capybaras'/></div>
+                <div className = "slide-image" id="image3"><img src={ostriches} width={500} height={250} alt='Screenshot-3'/></div>
             </div>
         
             <br></br>
-
             {/* How to Play Section */}
             <section className='how-to-section'>
                 <div className="how-to-section-content">
@@ -42,7 +51,7 @@ function Gameplay() {
                         <h4 className='how-to-subhead'>Building</h4>
                         <p className='how-to-details'>Every new player of DecentraZoo is given 200DZ to start out with. You can build whatever you want to your heart's desire, but you should try and build something that will
                         attract many vistors. The more visitors that come to your zoo, the more DZ you will earn. DecentraZoo provides hundreds of items and animals to get your building process
-                        started. Custom made items and hybrid animals can be bought on the DecentraZoo Marketplace. If you ever run low on DZ, you can earn more by visiting other zoos and writing a review.
+                        started. Custom made items and hybrid animals can be bought on the DecentraZoo Marketplace. If you ever run low on DZ, you can earn more by visiting the DecentraZoo Minigame Parlor and play minigames.
                         Alternatively, you can sell items, that you customly made, or hybrid animals on the DecentraZoo Marketplace to earn DZ.
                         </p>
                     </div>
@@ -57,6 +66,26 @@ function Gameplay() {
                         </p>
                     </div>
                     <img className='how-to-img' src={publishing_screenshot} alt='Publish-SS'/>            
+                </div>
+
+                <div className="how-to-section-content">
+                    <div className='how-to-text'>
+                        <h5 className='how-to-subhead'>Minigames</h5>
+                        <p className='how-to-details'>If you ever run low on DZ, you can always earn more by stopping by the DecentraZoo Minigame Parlor. Here, you can play minigames with other metaverse users to fill up your pockets.
+                        With over 100 minigames to choose from, the fun here will never end!
+                        </p>
+                    </div>
+                    <img className='how-to-img' src={dancing_minigame} alt='Publish-SS'/>            
+                </div>
+
+                <div className="how-to-section-content">
+                    <div className='how-to-text'>
+                        <h5 className='how-to-subhead'>The Marketplace</h5>
+                        <p className='how-to-details'>Frequently check out the DecentraZoo marketplace to see items that other users have made and published, as well as some hybrid animals. Think you got something that can earn you a few bucks,
+                        go ahead and publish it here on the marketplace.
+                        </p>
+                    </div>
+                    <img className='how-to-img' src={marketplace} alt='Publish-SS'/>            
                 </div>
             </section>
 
@@ -74,8 +103,27 @@ function Gameplay() {
                 prevent content from being copied or sold off to other users.
             </p>
             </section>
+
+            {/* Add more sections like videos, screenshots, and gameplay mechanics as needed */}
         </div>
     );
 }
+
+$(document).ready(function(){
+  
+    var interval = window.setInterval(rotateSlides, 3000)
+    
+    function rotateSlides(){
+      var $firstSlide = $('#gameplay-images').find('div:first');
+      var width = $firstSlide.width();
+      
+      $firstSlide.animate({marginLeft: -width}, 1000, function(){
+        var $lastSlide = $('#gameplay-images').find('div:last')
+        $lastSlide.after($firstSlide);
+        $firstSlide.css({marginLeft: 0})
+      })
+    }
+  
+  })
 
 export default Gameplay;

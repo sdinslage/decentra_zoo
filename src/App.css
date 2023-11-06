@@ -56,6 +56,15 @@
   text-align: center;
 }
 
+.title{
+  border-bottom: 2px solid var(--light-gray);
+  background: url('./imgs/dc_zoo_background.jpg')  rgba(0,0,0,.7) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color;
+  padding-top: 5px;
+}
+
 .heading {
   font-size: 90px;
   color: var(--white); 
@@ -72,16 +81,3 @@
   padding-bottom: 200px;
 }
 
-.page-layout ul {
-  list-style-type: disc; /* to ensure bullet points are displayed */
-  display: flex;
-  flex-direction: column; /* stack list items vertically */
-  align-items: center; /* center-align each list item */
-  padding: 0; /* remove default padding */
-  background-color: var(--dark-gray);
-}
-
-.page-layout li {
-  text-align: left; /* to keep the text left-aligned to the bullet points */
-  width: fit-content; /* fit the width of the list item to its content */
-}

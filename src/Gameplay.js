@@ -74,8 +74,6 @@ function Gameplay() {
                 prevent content from being copied or sold off to other users.
             </p>
             </section>
-
-            {/* Add more sections like videos, screenshots, and gameplay mechanics as needed */}
         </div>
     );
 }

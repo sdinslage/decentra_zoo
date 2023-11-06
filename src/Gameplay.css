@@ -70,16 +70,9 @@
     font-size: 90px;
 }
 
-.feat-section b{
-    margin-left: 150px;
-    color: var(--white);
-    font-size: 25px;
-}
-
 .feat-section ul {
     color: var(--white);
     font-size: 30px;
-    list-style-type: disc; /* to ensure bullet points are displayed */
     display: flex;
     flex-direction: column; /* stack list items vertically */
     margin-left: 200px;

@@ -1,14 +1,5 @@
 @import "./App.css";
 
-.title{
-    border-bottom: 2px solid var(--light-gray);
-    background: url('./imgs/dc_zoo_background.jpg')  rgba(0,0,0,.7) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: color;
-    padding-top: 5px;
-}
-
 /* About Section Styles */
 .about-section {
     height: 500px;

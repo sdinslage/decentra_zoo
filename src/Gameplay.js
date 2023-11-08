@@ -99,8 +99,9 @@ function Gameplay() {
                     <li>And much more!</li>
                 </ul>
                 <h2 className='feat-head'>The Use of Soulbound Tokens</h2>
-            <p className='soul-content'>Each zoo that each user creates is protected by a soulbound token. A soulbound token rightly proves ownership of an asset to a certain individual. These soulbound tokens will 
-                prevent content from being copied or sold off to other users.
+            <p className='soul-content'>Each zoo that is created will be protected by a soulbound token. A soulbound token is a type of NFT that cannot be sold or bought by anyone. It is mainly used in proving ownership
+                of certain assets and other traits of a specific individual. In DecentraZoo, soulbound tokens will be used to prove ownership of each zoo that is published to the metaverse. Once a zoo has been published, it cannot be bought or sold off by anyone- Your zoo belongs to you. 
+                This will allow each user to have full control over their zoo.
             </p>
             </section>
 

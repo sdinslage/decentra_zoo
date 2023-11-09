@@ -11,15 +11,41 @@
 }
 
 /* Images Section */
-.gameplay-images{
+
+#gameplay-images{
     display: flex;
-    justify-content: space-between;
-    margin-top: 150px;
+   justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
     padding-bottom: 150px;
     border-bottom: 2px solid var(--light-gray);
-    padding-left: 50px;
-    padding-right: 50px;
+    
+
+    /*border-right: 200px solid var(--dark-gray);*/
+    
+   
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
 }
+
+.slide-image {
+    margin-right: 30px;
+    margin-top: 75px;
+    
+    
+}
+
+#navigation-arrows {
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+
 
 /* How to Play Section */
 .how-to-section{
@@ -70,9 +96,16 @@
     font-size: 90px;
 }
 
+.feat-section b{
+    margin-left: 150px;
+    color: var(--white);
+    font-size: 25px;
+}
+
 .feat-section ul {
     color: var(--white);
     font-size: 30px;
+    list-style-type: disc; /* to ensure bullet points are displayed */
     display: flex;
     flex-direction: column; /* stack list items vertically */
     margin-left: 200px;
@@ -88,3 +121,4 @@
     font-weight: bold;
     margin-bottom: 300px; /* Adjust as per your design needs */
 }
+

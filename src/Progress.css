@@ -1,7 +1,7 @@
 @import "./App.css";
 
 .timeline-layout {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .timeline-layout .timeline-head{
@@ -14,4 +14,33 @@
     color: var(--white);
     font-size: 30px;
     margin-left: 38%;
+}
+
+.video-layout {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    margin: 50px 0; /* Add margin as needed for spacing */
+    margin-bottom: 200px;
+}
+
+.gameplay-video {
+    width: 90%; /* You can adjust this as needed */
+    height: 500px; /* Adjust height as needed */
+    max-width: 900px; /* Adjust as needed for responsiveness */
+    border: none; /* Removes the default iframe border */
+}
+
+.download-link {
+    margin-top: 20px; /* Adjust as needed for spacing */
+    text-align: center; /* Centers the text/link */
+}
+
+.download-link a {
+    text-decoration: none; /* Optional: removes the underline from links */
+    color: #007BFF; /* Optional: standard link color, change as needed */
+    font-weight: bold; /* Optional: makes the text bold */
+    font-size: 35px;
+    /* Add other styles as needed */
 }

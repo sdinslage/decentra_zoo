@@ -2,6 +2,7 @@ import React from 'react';
 import './Progress.css';
 
 function Progress() {
+    const youtubeLink = "https://www.youtube.com/embed/cqHvFaxbHTY";
     return (
         <div>
             <section className='title'>
@@ -18,6 +19,20 @@ function Progress() {
                     <li>Gameplay mechanics refinement - 50% complete</li>
                     {/* More milestones can be added */}
                 </ul>
+            </section>
+
+            {/* Video section */}
+            <section className="video-layout">
+                <iframe 
+                    className="gameplay-video" 
+                    src={youtubeLink} 
+                    title="DecentraZoo Gameplay Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen>
+                </iframe>
+                <div className="download-link">
+                    <a href={`${process.env.PUBLIC_URL}/DZ_Unity.zip`} download="DZ_Unity.zip">Download Alpha Version for Testing</a>
+                </div>
             </section>
 
             <section className='timeline-layout'>
